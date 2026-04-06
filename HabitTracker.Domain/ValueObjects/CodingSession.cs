@@ -22,7 +22,7 @@ namespace HabitTracker.Domain.ValueObjects
 
             if (string.IsNullOrWhiteSpace(notes))
             {
-                throw new ArgumentException("Notes are required.", nameof(notes));
+                throw new ArgumentException("Habit notes are required.", nameof(notes));
             }
 
             Language = language;

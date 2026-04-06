@@ -12,7 +12,7 @@ namespace HabitTracker.Domain.ValueObjects
         {
             if (string.IsNullOrWhiteSpace(skillFocusedOn))
             {
-                throw new ArgumentException("Skill focus is required.", nameof(skillFocusedOn));
+                throw new ArgumentException("Specific communication skill you focused on is required.", nameof(skillFocusedOn));
             }
 
             if (confidenceScore < 1 || confidenceScore > 10)
@@ -22,7 +22,7 @@ namespace HabitTracker.Domain.ValueObjects
 
             if (string.IsNullOrWhiteSpace(reflection))
             {
-                throw new ArgumentException("Reflection is required.", nameof(reflection));
+                throw new ArgumentException("Your reflection notes is required.", nameof(reflection));
             }
 
             SkillFocusedOn = skillFocusedOn;

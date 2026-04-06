@@ -17,7 +17,7 @@ namespace HabitTracker.Domain.ValueObjects
 
             if (durationMinutes <= 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(durationMinutes), "Duration must be greater than zero.");
+                throw new ArgumentOutOfRangeException(nameof(durationMinutes), "Workout duration must be greater than zero.");
             }
 
             if (weightKg < 0)
