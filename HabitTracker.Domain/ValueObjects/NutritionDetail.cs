@@ -4,11 +4,9 @@ using System.Text;
 
 namespace HabitTracker.Domain.ValueObjects
 {
-    public class NutritionDetail
-    {
-        public int Calories { get; set; }
-        public decimal ProteinGrams { get; set; }
-        public int FatGrams { get; set; }
-        public int CarbohydratesGrams { get; set; }
-    }
+    public sealed record NutritionDetail(
+        int Calories,
+        decimal ProteinGrams,
+        int FatGrams,
+        int CarbohydratesGrams);
 }

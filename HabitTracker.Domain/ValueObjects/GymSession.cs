@@ -4,10 +4,8 @@ using System.Text;
 
 namespace HabitTracker.Domain.ValueObjects
 {
-    public class GymSession
-    {
-        public string WorkoutType { get; set; } = string.Empty;
-        public int DurationMinutes { get; set; }
-        public double WeightKg { get; set; }
-    }
+    public sealed record GymSession(
+        string WorkoutType,
+        int DurationMinutes,
+        double WeightKg);
 }
