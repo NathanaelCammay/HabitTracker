@@ -2,6 +2,7 @@
 
 ## Project Guidelines
 - User prefers code recommendations to be shown in code blocks with a clear explanation alongside them.
+- Code suggestions must always be scoped to the correct target file path so that actions affect the intended file rather than the active document.
 
 ## Project Context
 - This project is a personal habit tracker built as deliberate practice to develop from junior toward intermediate/senior .NET development.
