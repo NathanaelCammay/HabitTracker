@@ -25,5 +25,39 @@ public class HabitConfiguration : IEntityTypeConfiguration<Habit>
 
         builder.Property(x => x.Category)
             .IsRequired();
+
+        builder.HasData(
+            new Habit
+            {
+                Id = 1,
+                Name = "Coding",
+                Description = "Track coding practice and development upskilling.",
+                CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                Category = HabitCategory.Coding
+            },
+            new Habit
+            {
+                Id = 2,
+                Name = "Gym",
+                Description = "Track gym training sessions and physical progress.",
+                CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                Category = HabitCategory.Gym
+            },
+            new Habit
+            {
+                Id = 3,
+                Name = "Nutrition",
+                Description = "Track nutrition habits and dietary consistency.",
+                CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                Category = HabitCategory.Nutrition
+            },
+            new Habit
+            {
+                Id = 4,
+                Name = "Communication",
+                Description = "Track communication practice and confidence in skills/traits.",
+                CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                Category = HabitCategory.Communication
+            });
     }
 }
