@@ -6,9 +6,9 @@ namespace HabitTracker.Domain.ValueObjects
     {
         public string WorkoutType { get; }
         public int DurationMinutes { get; }
-        public double WeightKg { get; }
+    public decimal WeightKg { get; }
 
-        public GymSession(string workoutType, int durationMinutes, double weightKg)
+    public GymSession(string workoutType, int durationMinutes, decimal weightKg)
         {
             if (string.IsNullOrWhiteSpace(workoutType))
             {
